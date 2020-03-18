@@ -1,16 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:id="@+id/inputRelativeLayout"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey">
+    android:background="@drawable/gradient_list"
+    android:paddingStart="35dp"
+    android:paddingEnd="35dp">
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp">
 
+        <TextView
+            android:layout_width="90dp"
+            android:text="Age:"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/lightPurple"
+            android:layout_height="50dp"
+            android:layout_marginBottom="50dp"/>
 
+        <TextView
+            android:layout_width="100dp"
+            android:text="Gender:"
+            android:fontFamily="sans-serif-light"
+            android:textSize="30sp"
+            android:textColor="@color/lightPurple"
+            android:layout_height="50dp"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:text="Height:"
+            android:fontFamily="sans-serif-light"
+            android:textSize="30sp"
+            android:textColor="@color/lightPurple"
+            android:layout_height="50dp"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:layout_width="90dp"
+            android:text="Weight:"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/lightPurple"
+            android:layout_height="50dp"
+            android:layout_marginBottom="50dp"/>
 
 
     </LinearLayout>

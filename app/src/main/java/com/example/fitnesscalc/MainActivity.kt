@@ -1,14 +1,21 @@
 package com.example.fitnesscalc
 
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
-import androidx.appcompat.app.ActionBar
+import android.widget.RelativeLayout
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val relativeLayout: RelativeLayout  = findViewById(R.id.mainActivityLayout)
+        val animationDrawable: AnimationDrawable = relativeLayout.getBackground() as AnimationDrawable
+        animationDrawable.setEnterFadeDuration(4000)
+        animationDrawable.setExitFadeDuration(4000)
+        animationDrawable.start()
 
     }
 }
