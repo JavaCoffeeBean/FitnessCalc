@@ -3,55 +3,102 @@
     android:id="@+id/inputRelativeLayout"
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_list"
-    android:paddingStart="35dp"
-    android:paddingEnd="35dp">
+    android:background="@drawable/calculation_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_list">
+
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/linLay"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/semiGrey"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
         android:layout_alignParentStart="true"
         android:layout_marginTop="60dp">
 
-        <TextView
-            android:layout_width="90dp"
-            android:text="Age:"
-            android:textSize="30sp"
+        <EditText
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:hint="Age"
+            android:textColorHint="#ACACAC"
+            android:textSize="20sp"
             android:fontFamily="sans-serif-light"
-            android:textColor="@color/lightPurple"
+            android:textColor="@color/white"
             android:layout_height="50dp"
             android:layout_marginBottom="50dp"/>
 
-        <TextView
-            android:layout_width="100dp"
-            android:text="Gender:"
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Gender"
+            android:textColorHint="#ACACAC"
             android:fontFamily="sans-serif-light"
-            android:textSize="30sp"
-            android:textColor="@color/lightPurple"
+            android:textSize="20sp"
+            android:textColor="@color/white"
             android:layout_height="50dp"
             android:layout_marginBottom="50dp"/>
 
-        <TextView
-            android:layout_width="90dp"
-            android:text="Height:"
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Height"
+            android:textColorHint="#ACACAC"
             android:fontFamily="sans-serif-light"
-            android:textSize="30sp"
-            android:textColor="@color/lightPurple"
+            android:textSize="20sp"
+            android:textColor="@color/white"
             android:layout_height="50dp"
             android:layout_marginBottom="50dp"/>
 
-        <TextView
-            android:layout_width="90dp"
-            android:text="Weight:"
-            android:textSize="30sp"
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Weight"
+            android:textSize="20sp"
+            android:textColorHint="#ACACAC"
             android:fontFamily="sans-serif-light"
-            android:textColor="@color/lightPurple"
+            android:textColor="@color/semiGrey"
             android:layout_height="50dp"
             android:layout_marginBottom="50dp"/>
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/calcButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Calculate"
+        android:layout_below="@id/linLay"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="35dp"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/calculate_button_bg"
+        android:backgroundTint="@color/lightPurple"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Clear"
+        android:layout_marginRight="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/linLay"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:background="@drawable/calculate_button_bg"
+        android:backgroundTint="#606060"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>

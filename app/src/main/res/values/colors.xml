@@ -6,4 +6,5 @@
     <color name="lightPurple">#9C27B0</color>
     <color name="white">#FFFFFF</color>
     <color name="grey">#3E3E3E</color>
+    <color name="semiGrey">#99333333</color>
 </resources>
