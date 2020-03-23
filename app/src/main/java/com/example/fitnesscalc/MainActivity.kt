@@ -44,20 +44,24 @@ class MainActivity : AppCompatActivity() {
 
 
          bmi_Button.setOnClickListener(View.OnClickListener {
-         calcTitle = bmi_Button.toString()
+         calcTitle = bmi_Button.text.toString()
              intentt.putExtra("EXTRA_BMI", calcTitle)
              startActivity(intentt)})
         calorie_Button.setOnClickListener(View.OnClickListener {
-            calcTitle = calorie_Button.toString()
+            calcTitle = calorie_Button.text.toString()
+            intentt.putExtra("EXTRA_BMI", calcTitle)
             startActivity(intentt)})
         bodyFat_Button.setOnClickListener(View.OnClickListener {
-            calcTitle = bodyFat_Button.toString()
+            calcTitle = bodyFat_Button.text.toString()
+            intentt.putExtra("EXTRA_BMI", calcTitle)
             startActivity(intentt)})
         bmr_Button.setOnClickListener(View.OnClickListener {
-            calcTitle = bmr_Button.toString()
+            calcTitle = bmr_Button.text.toString()
+            intentt.putExtra("EXTRA_BMI", calcTitle)
             startActivity(intentt)})
         idealWeight_Button.setOnClickListener(View.OnClickListener {
-            calcTitle = idealWeight_Button.toString()
+            calcTitle = idealWeight_Button.text.toString()
+            intentt.putExtra("EXTRA_BMI", calcTitle)
             startActivity(intentt)})
 
 
