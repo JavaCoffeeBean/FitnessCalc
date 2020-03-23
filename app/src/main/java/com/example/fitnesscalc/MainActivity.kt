@@ -6,10 +6,10 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.RelativeLayout
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+    lateinit var calcTitle: String
 
 
 
@@ -40,16 +40,24 @@ class MainActivity : AppCompatActivity() {
         animationDrawable.setExitFadeDuration(4000)
         animationDrawable.start()
 
+        //public static final String EXTRA_BMI = "com.example.fitnesscalc.EXTRA_BMI";
+
 
          bmi_Button.setOnClickListener(View.OnClickListener {
+         calcTitle = bmi_Button.toString()
+             intentt.putExtra("EXTRA_BMI", calcTitle)
              startActivity(intentt)})
         calorie_Button.setOnClickListener(View.OnClickListener {
+            calcTitle = calorie_Button.toString()
             startActivity(intentt)})
         bodyFat_Button.setOnClickListener(View.OnClickListener {
+            calcTitle = bodyFat_Button.toString()
             startActivity(intentt)})
         bmr_Button.setOnClickListener(View.OnClickListener {
+            calcTitle = bmr_Button.toString()
             startActivity(intentt)})
         idealWeight_Button.setOnClickListener(View.OnClickListener {
+            calcTitle = idealWeight_Button.toString()
             startActivity(intentt)})
 
 

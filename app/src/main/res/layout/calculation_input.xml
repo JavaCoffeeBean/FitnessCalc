@@ -23,10 +23,22 @@
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="60dp">
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/calcnamE"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Body Fat"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
 
         <EditText
-            android:layout_marginTop="50dp"
+            android:id="@+id/ageInput"
+            android:inputType="number"
             android:layout_width="match_parent"
             android:hint="Age"
             android:textColorHint="#ACACAC"
@@ -59,6 +71,7 @@
         <EditText
             android:layout_width="match_parent"
             android:hint="Weight"
+            android:inputType="number"
             android:textSize="20sp"
             android:textColorHint="#ACACAC"
             android:fontFamily="sans-serif-light"
