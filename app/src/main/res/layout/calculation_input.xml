@@ -48,8 +48,38 @@
             android:layout_height="50dp"
             android:layout_marginBottom="50dp"/>
 
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/maleCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:onClick="checkButton"
+                android:textColor="@color/maleColor"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/femaleCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:onClick="checkButton"
+                android:textColor="@color/femaleColor"
+                android:layout_marginLeft="10dp"/>
+
+        </RadioGroup>
+
+
+
         <EditText
-            android:layout_width="match_parent"
+            android:id="@+id/genderInput"
+            android:layout_width="wrap_content"
             android:hint="Gender"
             android:textColorHint="#ACACAC"
             android:fontFamily="sans-serif-light"
@@ -58,7 +88,10 @@
             android:layout_height="50dp"
             android:layout_marginBottom="50dp"/>
 
+
+
         <EditText
+            android:id="@+id/weightInput"
             android:layout_width="match_parent"
             android:hint="Height"
             android:textColorHint="#ACACAC"
