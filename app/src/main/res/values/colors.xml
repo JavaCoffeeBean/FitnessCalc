@@ -9,4 +9,13 @@
     <color name="semiGrey">#99333333</color>
     <color name="maleColor">#2196F3</color>
     <color name="femaleColor">#E586F6</color>
+    <color name="highlightColor">#292929</color>
+    <color name="foregroundColor">#353535</color>
+    <color name="backgroundColor">#1B1B1B</color>
+
+    <color name="underweightColor">#03A9F4</color>
+    <color name="normalColor">#4CAF50</color>
+    <color name="overweightColor">#FF9800</color>
+    <color name="obeseColor">#FF5722</color>
+    <color name="veryObeseColor">#FF2222</color>
 </resources>

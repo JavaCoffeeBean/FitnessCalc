@@ -54,7 +54,7 @@ class CalcInput : AppCompatActivity() {
             genderMale = false
         }
 
-        weightt.setText(genderMale.toString())
+        /*weightt.setText(genderMale.toString())*/
 
 
 
