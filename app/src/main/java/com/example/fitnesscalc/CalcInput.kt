@@ -1,11 +1,9 @@
 package com.example.fitnesscalc
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.TextView
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.properties.Delegates
 
@@ -25,6 +23,8 @@ class CalcInput : AppCompatActivity() {
         val calcName2 = intent.getStringExtra("EXTRA_BMI")
 
         val calcTitle: TextView = findViewById(R.id.calcnamE)
+        val calcButton: Button = findViewById(R.id.calcButton)
+
         radioGroup = findViewById(R.id.radioGroup)
         weightt = findViewById(R.id.weightInput)
 
@@ -36,6 +36,11 @@ class CalcInput : AppCompatActivity() {
         catch (e: Exception) {
             calcTitle.text = e.localizedMessage
         }
+
+        calcButton.setOnClickListener(View.OnClickListener {
+            var intentB: Intent = Intent(this, BmiResults::class.java)
+            startActivity(intentB)
+        })
     }
 
     override fun finish() {
