@@ -46,7 +46,12 @@
             android:fontFamily="sans-serif-light"
             android:textColor="@color/white"
             android:layout_height="50dp"
-            android:layout_marginBottom="20dp"/>
+            android:layout_marginBottom="35dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
 
 
 
@@ -65,12 +70,13 @@
             android:layout_marginBottom="35dp"/>
 
         <RadioGroup
+            android:layout_toRightOf="@id/genderInput"
             android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_marginBottom="30dp"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal">
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/maleCheck"
@@ -92,12 +98,14 @@
 
         </RadioGroup>
 
+        </RelativeLayout>
+
 
 
         <EditText
             android:id="@+id/weightInput"
             android:layout_width="match_parent"
-            android:hint="Height"
+            android:hint="pounds"
             android:textColorHint="#ACACAC"
             android:fontFamily="sans-serif-light"
             android:textSize="20sp"
@@ -105,16 +113,43 @@
             android:layout_height="50dp"
             android:layout_marginBottom="50dp"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:hint="Weight"
-            android:inputType="number"
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/height_titlebox"
+            android:layout_width="wrap_content"
+            android:hint="Height"
+            android:gravity="center"
             android:textSize="20sp"
             android:textColorHint="#ACACAC"
             android:fontFamily="sans-serif-light"
             android:textColor="@color/semiGrey"
             android:layout_height="50dp"
             android:layout_marginBottom="50dp"/>
+
+            <EditText
+                android:id="@+id/feet_input"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_toRightOf="@+id/height_titlebox"
+                android:hint="Feet"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/inches_input"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_toRightOf="@+id/feet_input"
+                android:hint="Inches"
+                android:layout_marginLeft="20dp"/>
+
+        </RelativeLayout>
 
 
     </LinearLayout>
