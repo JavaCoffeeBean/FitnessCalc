@@ -3,6 +3,7 @@ package com.example.fitnesscalc
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.reflect.KClass
 
 class BmiResults : AppCompatActivity() {
 
@@ -11,9 +12,15 @@ class BmiResults : AppCompatActivity() {
         setContentView(R.layout.activity_bmi_results)
 
         val button: TextView = findViewById(R.id.BMI_result)
+        val popp = Formulas()
+        popp.calculateBMI()
 
 
-        val bmiScore: Float = intent.getFloatExtra("BMISCORE", 0f)
+        val feetHeight: Int =
+        val inchesHeight: Int =
+        val weight: Int =
+
+            val finalBMI: Float =
 
 
         button.text = bmiScore.toString()

@@ -106,6 +106,7 @@
             android:id="@+id/weightInput"
             android:layout_width="match_parent"
             android:hint="pounds"
+            android:inputType="number"
             android:textColorHint="#ACACAC"
             android:fontFamily="sans-serif-light"
             android:textSize="20sp"

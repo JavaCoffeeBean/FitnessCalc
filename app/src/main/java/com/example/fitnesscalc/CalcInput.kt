@@ -13,6 +13,7 @@ class CalcInput : AppCompatActivity() {
     lateinit var radioGroup: RadioGroup
     var genderMale by Delegates.notNull<Boolean>()
     lateinit var weightt: EditText
+    val forms: Formulas()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,13 +46,13 @@ class CalcInput : AppCompatActivity() {
 
         calcButton.setOnClickListener(View.OnClickListener {
 
-           /* val calculatedBMI: Float = calculateBMI(weight.text.toString().toInt(), heightFeet.text.toString().toInt(), heightInch.text.toString().toInt())*/
-
 
 
 
             var intentB: Intent = Intent(this, BmiResults::class.java)
-            intentB.putExtra("BMISCORE", calculateBMI(weight.text.toString().toInt(), heightFeet.text.toString().toInt(), heightInch.text.toString().toInt()))
+            intentB.putExtra("WEIGHT", weight.text.toString().to)
+            intentB.putExtra("INCH", heightInch.text.toString().)
+            intentB.putExtra("FEET", calculatedBMI)
             startActivity(intentB)
         })
     }
@@ -78,13 +79,16 @@ class CalcInput : AppCompatActivity() {
 
     }
 
-    fun calculateBMI(pounds: Int, feet: Int, inches: Int) : Float {
+    /*fun calculateBMI(pounds: Int, feet: Int, inches: Int) : Float {
         val finalHeight: Int = (feet * 12) + inches
         val finalHeightSquared: Int = finalHeight * finalHeight
 
 
-        val finalBMI = (pounds / finalHeightSquared) * 703
+        var finalBMI = pounds/finalHeightSquared
+
+
 
         return finalBMI.toFloat()
-    }
+
+    }*/
 }
