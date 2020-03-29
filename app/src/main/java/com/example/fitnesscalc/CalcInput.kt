@@ -13,7 +13,6 @@ class CalcInput : AppCompatActivity() {
     lateinit var radioGroup: RadioGroup
     var genderMale by Delegates.notNull<Boolean>()
     lateinit var weightt: EditText
-    val forms: Formulas()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,14 +44,17 @@ class CalcInput : AppCompatActivity() {
         }
 
         calcButton.setOnClickListener(View.OnClickListener {
+            val inchy: Int = heightInch.text.toString().toInt()
+            val feet: Int = heightFeet.text.toString().toInt()
+            val pounds: Int = weight.text.toString().toInt()
 
 
 
 
             var intentB: Intent = Intent(this, BmiResults::class.java)
-            intentB.putExtra("WEIGHT", weight.text.toString().to)
-            intentB.putExtra("INCH", heightInch.text.toString().)
-            intentB.putExtra("FEET", calculatedBMI)
+            intentB.putExtra("WEIGHT", pounds)
+            intentB.putExtra("INCH", inchy)
+            intentB.putExtra("FEET", feet)
             startActivity(intentB)
         })
     }
