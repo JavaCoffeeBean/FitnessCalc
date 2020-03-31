@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">FitnessCalc</string>
     <string name="_18_5"><![CDATA[< 18.5]]></string>
+
+    <string name="underweight">You\'re all skin and bones!</string>
+    <string name="normal">You\'re in great shape!</string>
+    <string name="overweight">Cut out the Junk Food!</string>
+    <string name="obese">Lose a few pounds!</string>
+    <string name="veryobese">Hit the gym and eat better!</string>
+
+
 </resources>
